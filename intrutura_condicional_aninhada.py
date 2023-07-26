@@ -1,4 +1,4 @@
-conta_normal = False
+conta_normal = True
 conta_universitaria = False
 
 saldo = 2000
