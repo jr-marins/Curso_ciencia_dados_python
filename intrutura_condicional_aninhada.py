@@ -28,7 +28,7 @@ else:
 
 if conta_normal == True and conta_universitaria == False:
 #and(operador lógico E para inserir a condição )
-    opcao = int(input("Sr desejar fazer mais operações, digite a opção desejada:\n[1]-Extrato\n[2]-Novo saque\n"))
+    opcao = int(input("Se desejar fazer mais operações, digite a opção desejada:\n[1]-Extrato\n[2]-Novo saque\n"))
 #int para indicar e ler a entrada de um numero inteiro
     if opcao == 1:
         print("Seu saldo é de :\n$ ", extrato)
