@@ -1,6 +1,6 @@
-#Manipulando strings
-nome = "marcos"
 
+nome = "marcos"
+#Manipulando strings
 print(nome.upper())
 #todos os caracters em maiuscula
 print(nome.lower())
@@ -13,12 +13,15 @@ texto = "   cortando os espaços    "
 print(texto + ".")
 print(texto.strip() + ".")
 #Ambos os espaços
+
 print(texto.lstrip() + ".")
 #left(esquerda)
+
 print(texto.rstrip() + ".")
 #right(direita)
 
 menu = "python"
+
 print(menu.center(14))
 #centraliza e os epeços acrescentados fica em branco
 print(menu.center(14, "#"))
