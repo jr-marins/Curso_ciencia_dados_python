@@ -34,11 +34,11 @@ while True:
         
     # Aqui tenho essas 3 verificaçoes, sobre a operação.
         excedeu_saldo = valor > saldo
-        
+    #Se o valor digitado for maior que o que o disponivel em saldo, opraçao incorreta    
         excedeu_limite = valor > limite
-        
+    #Se ultrapassou meu limite de 500, operação incorreta  
         excedeu_saques = numero_saques >= LIMITE_SAQUES
-        
+     #Se excededu minha quantidade diaria de sauqe, operaçao negada   
         if excedeu_saldo:
             print("Desculpa mais seu saldo é insuficiente.\n")
             
@@ -59,12 +59,15 @@ while True:
         
     elif opcao == '2':
         print("\n################### EXTRATO #####################\n")
+    #Aqui fiz um menu para facilitar a compreensão    
         print("Nao foram realizadas movimentaçoes." if not extrato else extrato)
+    #Aqui uso o if ternário para verificar a condiçao da conta
         print(f"\nSaldo: R$ {saldo:.2f}")
         print("###################################################\n")
-        
+        break
         
     elif opcao == '3':
+        print("Agradecemos a preferência")
         break
 
 else:
